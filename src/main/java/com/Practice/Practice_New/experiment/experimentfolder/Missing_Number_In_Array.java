@@ -13,20 +13,37 @@ public class Missing_Number_In_Array {
     }
 
     private static int missingNumber(int[] arr) {
-        //include missing number
-        int n=arr.length + 1;
-        // below is the formula for finding missing number (n * (n+1))/2;
-        int expectedSum=(n * (n+1))/2;
+//        //include missing number
+//        int n=arr.length + 1;
+//        // below is the formula for finding missing number (n * (n+1))/2;
+//        int expectedSum=(n * (n+1))/2;
+//
+//        int actualSum=0;
+//
+//        for(int i=0; i<arr.length;i++){
+//            actualSum+=arr[i];
+//        }
+//        // and here is the missing number that is the difference between expectedSum and actualSum.
+//        int i = expectedSum - actualSum;
+//
+//        return i;
 
+
+        int n= arr.length+1;
+        int expectedSum= (n *(n+1))/2;
         int actualSum=0;
 
-        for(int i=0; i<arr.length;i++){
+        for (int i=0; i< arr.length; i++){
             actualSum+=arr[i];
         }
-        // and here is the missing number that is the difference between expectedSum and actualSum.
-        int i = expectedSum - actualSum;
 
-        return i;
+        int missingNumber= expectedSum - actualSum;
+
+        System.out.println(missingNumber);
+
+        return missingNumber;
+
+
     }
 
 
