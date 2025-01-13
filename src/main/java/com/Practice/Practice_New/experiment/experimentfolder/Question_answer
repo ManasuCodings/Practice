@@ -1,0 +1,6 @@
+Question: what is transient in serialisation
+
+ans:transient keyword is used to avoid serialization of filed or object and by the time of
+deserialization it will store the default value it is mainly used for security purpose like
+card number, password so that it should not get serialize.
+
