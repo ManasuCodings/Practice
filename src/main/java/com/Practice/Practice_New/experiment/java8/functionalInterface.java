@@ -7,8 +7,9 @@ import java.util.stream.Collectors;
 @FunctionalInterface
 public  interface functionalInterface {
 
+
 //    public String village(String village);
-    public int sum(int x, int y);
+    int sum(int x, int y);
 
     default String name(String name){
        return "your name is :"+name;

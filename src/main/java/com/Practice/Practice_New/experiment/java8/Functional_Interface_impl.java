@@ -21,4 +21,5 @@ public class Functional_Interface_impl{
         functionalInterface.newName("Dev");//static method call by interface name
     }
 
+
 }
